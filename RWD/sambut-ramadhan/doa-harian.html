@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doa Harian Ramadhan</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideDown 1s ease-in-out;
+        }
+
+        header .logo h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        .doa-harian {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .doa-harian h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        .doa-harian article {
+            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .doa-harian article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .doa-harian article h3 {
+            color: #2196F3;
+            margin-bottom: 10px;
+        }
+
+        .doa-harian article p {
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #4CAF50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f4f4f4;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            color: #555;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: #2196F3;
+        }
+
+        /* Fade-in effect */
+        .fade-in-effect {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Doa Harian Ramadhan</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="kalender-ramadhan.html">Kalender Ramadhan</a></li>
+                <li><a href="tips-dan-artikel.html">Tips dan Artikel</a></li>
+                <li><a href="panduan-ibadah.html">Panduan Ibadah</a></li>
+                <li><a href="cerita-dan-kisah.html">Cerita & Kisah Inspiratif</a></li>
+                <li><a href="doa-harian.html">Doa Harian</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="doa-harian">
+        <h2 class="fade-in-effect">Doa Harian Ramadhan</h2>
+
+        <article class="fade-in-effect">
+            <h3>Doa Sahur</h3>
+            <p><strong>اللهم إني نويت صوم غدٍ عن أداء فرض رمضان هذا السنة لله تعالى</strong></p>
+            <p>Transliterasi: "Allahumma inni nawaitu shauma ghadiy an adaa'i fardhi ramadana hadhihi as-sanat lillahi ta'ala."</p>
+            <p>Terjemahan: "Ya Allah, aku niat berpuasa esok hari untuk melaksanakan kewajiban puasa Ramadhan tahun ini karena-Mu."</p>
+        </article>
+
+        <article class="fade-in-effect">
+            <h3>Doa Berbuka Puasa</h3>
+            <p><strong>اللهم إني لك صمت، وعليك توكلت، وبك آمنت، ولأجلك أفطرت</strong></p>
+            <p>Transliterasi: "Allahumma inni laka shumtu, wa 'alayka tawakkaltu, wa bika aamantu, wa la'ajlika aftartu."</p>
+            <p>Terjemahan: "Ya Allah, aku berpuasa karena-Mu, dan kepada-Mu aku bertawakal, dan aku beriman kepada-Mu, dan untuk-Mu aku berbuka."</p>
+        </article>
+
+        <article class="fade-in-effect">
+            <h3>Doa Ketika Mendapatkan Lailatul Qadar</h3>
+            <p><strong>اللهم إنك عفو كريم تحب العفو فاعف عني</strong></p>
+            <p>Transliterasi: "Allahumma innaka 'afuwwun kareemun tuhibbul 'afwa fa'fu 'anni."</p>
+            <p>Terjemahan: "Ya Allah, sesungguhnya Engkau Maha Pemaaf, Mahamulia, Engkau menyukai pemaafan, maka maafkanlah aku."</p>
+        </article>
+
+        <a href="https://alhidayahdepok.com/kumpulan-doa-harian-selama-bulan-ramadhan-arab-latin-dan-terjemah-arti/" class="button fade-in-effect" target="_blank">Baca Lebih Lanjut</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sambut Ramadhan dengan Keberkahan. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/groups/345954172143701/?_rdc=1&_rdr"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/ramadhan?mx=2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/menyambutramadhan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const articles = document.querySelectorAll(".fade-in-effect");
+            articles.forEach((article, index) => {
+                article.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+    </script>
+</body>
+</html>

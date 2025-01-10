@@ -1,0 +1,258 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender Masehi Ramadhan 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0; /* Awal untuk animasi */
+            transform: translateX(-100%); /* Awal untuk efek slide-in */
+            animation: slideInFromLeft 1s ease-out forwards;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            opacity: 0; /* Untuk animasi fade-in */
+            transform: translateY(50px); /* Awal animasi */
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .container:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .calendar div {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: scale(0.8);
+            animation: slideIn 0.5s ease-out forwards;
+        }
+
+        .calendar .header {
+            font-weight: bold;
+            background-color: #4CAF50;
+            color: white;
+            animation-delay: 0.3s;
+        }
+
+        .calendar .day {
+            cursor: pointer;
+            transition: background-color 0.3s;
+            animation-delay: calc(0.3s + var(--delay));
+        }
+
+        .calendar .day:hover {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .calendar .checked-day {
+            background-color: #81C784 !important;
+            color: white;
+            text-decoration: line-through;
+            font-weight: bold;
+        }
+
+        .calendar .disabled {
+            background-color: #e0e0e0;
+            cursor: not-allowed;
+        }
+
+        .important-day {
+            background-color: #FFEB3B; /* Warna kuning cerah */
+            font-weight: bold;
+            color: #00c00d;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: #f4f4f4;
+            color: #555;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            animation: slideUp 1s ease-out;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            color: #555;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer .social-icons a:hover {
+            color: #2196F3;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kalender Ramadhan 2025</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="kalender-ramadhan.html">Kalender Ramadhan</a>
+            <a href="tips-dan-artikel.html">Tips dan Artikel</a>
+            <a href="panduan-ibadah.html">Panduan Ibadah</a>
+            <a href="cerita-dan-kisah.html">Cerita & Kisah Inspiratif</a>
+            <a href="doa-harian.html">Doa Harian</a>
+        </nav>
+    </header>
+
+    <div class="container">
+    
+        <h2>Maret 2025</h2>
+        <div class="calendar">
+            <div class="header">Senin</div>
+            <div class="header">Selasa</div>
+            <div class="header">Rabu</div>
+            <div class="header">Kamis</div>
+            <div class="header">Jumat</div>
+            <div class="header">Sabtu</div>
+            <div class="header">Minggu</div>
+
+            <!-- Tanggal 23-28 Februari dengan class disabled -->
+            <div class="day disabled" style="--delay: 0s;">23</div>
+            <div class="day disabled" style="--delay: 0.1s;">24</div>
+            <div class="day disabled" style="--delay: 0.2s;">25</div>
+            <div class="day disabled" style="--delay: 0.3s;">26</div>
+            <div class="day disabled" style="--delay: 0.4s;">27</div>
+            <div class="day disabled" style="--delay: 0.5s;">28</div>
+            <!-- Tanggal 1 Maret -->
+            <div class="important-day" style="--delay: 0.6s;">1</div>
+            
+            <div class="day" style="--delay: 0s;">2</div>
+            <div class="day" style="--delay: 0.1s;">3</div>
+            <div class="day" style="--delay: 0.2s;">4</div>
+            <div class="day" style="--delay: 0.3s;">5</div>
+            <div class="day" style="--delay: 0.4s;">6</div>
+            <div class="day" style="--delay: 0.5s;">7</div>
+            <div class="day" style="--delay: 0.6s;">8</div>
+
+            <div class="day" style="--delay: 0s;">9</div>
+            <div class="day" style="--delay: 0.1s;">10</div>
+            <div class="day" style="--delay: 0.2s;">11</div>
+            <div class="day" style="--delay: 0.3s;">12</div>
+            <div class="day" style="--delay: 0.4s;">13</div>
+            <div class="day" style="--delay: 0.5s;">14</div>
+            <div class="day" style="--delay: 0.6s;">15</div>
+
+            <div class="day" style="--delay: 0s;">16</div>
+            <div class="day" style="--delay: 0.1s;">17</div>
+            <div class="day" style="--delay: 0.2s;">18</div>
+            <div class="day" style="--delay: 0.3s;">19</div>
+            <div class="day" style="--delay: 0.4s;">20</div>
+            <div class="important-day" style="--delay: 0.5s;">21</div>
+            <div class="day" style="--delay: 0.6s;">22</div>
+
+            <div class="important-day" style="--delay: 0s;">23</div>
+            <div class="day" style="--delay: 0.1s;">24</div>
+            <div class="important-day" style="--delay: 0.2s;">25</div>
+            <div class="day" style="--delay: 0.3s;">26</div>
+            <div class="important-day" style="--delay: 0.4s;">27</div>
+            <div class="day" style="--delay: 0.5s;">28</div>
+            <div class="important-day" style="--delay: 0.6s;">29</div>
+
+            <div class="important-day" style="--delay: 0.6s;">30</div>
+            <div class="day" style="--delay: 0.6s;">31</div>
+        </div>
+        <h3>==============================================================================================================</h3>
+        <h2>Tanggal Penting selama Ramadhan</h2>
+        
+        🟢<strong>Awal Ramadhan:</strong> Sabtu, 1 Maret 2025🟢 <br>
+        🟢<strong>Akhir Ramadhan (Lebaran Idul Fitri):</strong> Minggu, 30 Maret 2025🟢<br>
+        🟢<strong>Perkiraan Malam Lailatul Qadar:</strong> 21,23,25,27,29 Ramadhan (Tanggal 3,5,7,9,11 Maret 2025)🟢<br>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sambut Ramadhan dengan Keberkahan. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/groups/345954172143701/?_rdc=1&_rdr"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/ramadhan?mx=2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/menyambutramadhan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

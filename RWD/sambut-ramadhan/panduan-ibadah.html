@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Ibadah Ramadhan</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1s forwards;
+        }
+
+        header .logo h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        .panduan-ibadah {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .panduan-ibadah h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        .panduan-ibadah article {
+            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .panduan-ibadah article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .panduan-ibadah article h3 {
+            color: #2196F3;
+            margin-bottom: 10px;
+        }
+
+        .panduan-ibadah article p {
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #4CAF50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f4f4f4;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            color: #555;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: #2196F3;
+        }
+
+        /* Fade-in effect */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Panduan Ibadah Ramadhan</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="kalender-ramadhan.html">Kalender Ramadhan</a></li>
+                <li><a href="tips-dan-artikel.html">Tips dan Artikel</a></li>
+                <li><a href="panduan-ibadah.html">Panduan Ibadah</a></li>
+                <li><a href="cerita-dan-kisah.html">Cerita & Kisah Inspiratif</a></li>
+                <li><a href="doa-harian.html">Doa Harian</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="panduan-ibadah">
+        <h2 class="fade-in">Berbagai Ibadah Selama Ramadhan</h2>
+        
+        <article class="fade-in">
+            <h3>Puasa</h3>
+            <p>Puasa adalah ibadah wajib selama bulan Ramadhan yang bertujuan untuk meningkatkan ketakwaan kepada Allah SWT. Selama berpuasa, umat Muslim menahan diri dari makan, minum, dan hal-hal yang membatalkan puasa sejak fajar hingga matahari terbenam.</p>
+        </article>
+
+        <article class="fade-in">
+            <h3>Sholat Tarawih</h3>
+            <p>Sholat Tarawih adalah sholat sunnah yang dilakukan pada malam hari selama bulan Ramadhan. Sholat ini sangat dianjurkan dan dilaksanakan setelah sholat Isya.</p>
+        </article>
+
+        <article class="fade-in">
+            <h3>Membaca Al-Qur'an</h3>
+            <p>Bulan Ramadhan adalah waktu yang tepat untuk memperbanyak membaca dan memahami Al-Qur'an. Disarankan untuk khatam Al-Qur'an selama bulan ini.</p>
+        </article>
+
+        <article class="fade-in">
+            <h3>Sedekah</h3>
+            <p>Salah satu amal yang sangat dianjurkan selama Ramadhan adalah bersedekah, baik berupa uang, makanan, atau tenaga. Sedekah dapat membantu mereka yang membutuhkan dan meningkatkan keberkahan Ramadhan.</p>
+        </article>
+
+        <!-- Tombol interaktif -->
+        <a href="https://lajupeduli.org/panduan-ibadah-selama-bulan-ramadhan/" class="button fade-in" target="_blank">Baca Lebih Lanjut</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sambut Ramadhan dengan Keberkahan. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/groups/345954172143701/?_rdc=1&_rdr"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/ramadhan?mx=2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/menyambutramadhan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".fade-in");
+            elements.forEach((el, index) => {
+                el.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+    </script>
+</body>
+</html>
