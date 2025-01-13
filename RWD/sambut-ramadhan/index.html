@@ -6,6 +6,256 @@
     <title>Sambut Ramadhan dengan Keberkahan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        
+        /* From Uiverse.io by PriyanshuGupta28 */ 
+.pushable {
+    position: relative;
+    background: transparent;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    outline-offset: 4px;
+    outline-color: rgb(36, 255, 20);
+    transition: filter 250ms;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: hsl(226, 25%, 69%);
+    border-radius: 8px;
+    filter: blur(2px);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  }
+  
+  .edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background: linear-gradient(
+      to right,
+      hsl(121, 39%, 39%) 0%,
+      hsl(115, 39%, 49%) 8%,
+      hsl(116, 39%, 39%) 92%,
+      hsl(132, 39%, 29%) 100%
+    );
+  }
+  
+  .front {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    background: hsl(128, 53%, 58%);
+    padding: 16px 32px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    transform: translateY(-4px);
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  }
+  
+  .pushable:hover {
+    filter: brightness(110%);
+  }
+  
+  .pushable:hover .front {
+    transform: translateY(-6px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  
+  .pushable:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  
+  .pushable:hover .shadow {
+    transform: translateY(4px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  
+  .pushable:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+  
+  .pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
+  
+
+/* From Uiverse.io by Pankaj-Meharchandani */ 
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --animation: 2s ease-in-out infinite;
+  }
+  
+  .loader .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: solid 2px transparent;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: transparent;
+    animation: circle-keys var(--animation);
+  }
+  
+  .loader .circle .dot {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    animation: dot-keys var(--animation);
+  }
+  
+  .loader .circle .outline {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: outline-keys var(--animation);
+  }
+  
+  .circle:nth-child(1) {
+    --color: #4285f4; /* Blue */
+    border-color: var(--color);
+  }
+  
+  .circle:nth-child(1) .dot {
+    background-color: var(--color);
+  }
+  
+  .circle:nth-child(2) {
+    --color: #ea4335; /* Red */
+    border-color: var(--color);
+    animation-delay: 0.3s;
+  }
+  
+  .circle:nth-child(2) .dot {
+    background-color: var(--color);
+    animation-delay: 0.3s;
+  }
+  
+  .circle:nth-child(3) {
+    --color: #fbbc05; /* Yellow */
+    border-color: var(--color);
+    animation-delay: 0.6s;
+  }
+  
+  .circle:nth-child(3) .dot {
+    background-color: var(--color);
+    animation-delay: 0.6s;
+  }
+  
+  .circle:nth-child(4) {
+    --color: #34a853; /* Green */
+    border-color: var(--color);
+    animation-delay: 0.9s;
+  }
+  
+  .circle:nth-child(4) .dot {
+    background-color: var(--color);
+    animation-delay: 0.9s;
+  }
+  
+  .circle:nth-child(5) {
+    --color: #4285f4; /* Blue (repeat for continuity) */
+    border-color: var(--color);
+    animation-delay: 1.2s;
+  }
+  
+  .circle:nth-child(5) .dot {
+    background-color: var(--color);
+    animation-delay: 1.2s;
+  }
+  
+  .circle:nth-child(1) .outline {
+    animation-delay: 0.9s;
+  }
+  
+  .circle:nth-child(2) .outline {
+    animation-delay: 1.2s;
+  }
+  
+  .circle:nth-child(3) .outline {
+    animation-delay: 1.5s;
+  }
+  
+  .circle:nth-child(4) .outline {
+    animation-delay: 1.8s;
+  }
+  
+  .circle:nth-child(5) .outline {
+    animation-delay: 2.1s;
+  }
+  
+  @keyframes circle-keys {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  
+    50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes dot-keys {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(0);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes outline-keys {
+    0% {
+      transform: scale(0);
+      outline: solid 20px var(--color);
+      outline-offset: 0;
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1);
+      outline: solid 0 transparent;
+      outline-offset: 20px;
+      opacity: 0;
+    }
+  }
+  
+
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -70,6 +320,86 @@
             line-height: 1.8;
             margin-bottom: 20px;
             animation: fadeInUp 2s ease-in-out;
+        }
+
+        .intro {
+            text-align: justify;  /* Rata kanan kiri */
+            line-height: 1.6;      /* Memberikan jarak antar baris agar teks lebih nyaman dibaca */
+        }
+
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #f9f9f9;
+            max-width: 500px;
+            text-align: left;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        form input:focus, form select:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+
+        form button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        form button:hover {
+            background: #45a049;
+            transform: scale(1.05);
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background: #e8f5e9;
+            border-radius: 5px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #4CAF50;
+            color: white;
         }
 
         footer {
@@ -169,12 +499,88 @@
     <div class="container">
         <h2>Selamat Datang di Bulan Suci Ramadhan</h2>
         <p class="intro">
-            Website ini bertujuan untuk menjadi panduan lengkap bagi umat Muslim dalam menyambut dan menjalani bulan suci Ramadhan. 
-            Dengan informasi yang terstruktur dan mudah diakses, website ini akan membantu memaksimalkan ibadah dan meningkatkan 
-            pengetahuan tentang Ramadhan.
+            Bulan Ramadhan adalah bulan penuh berkah, di mana umat Muslim di seluruh dunia menjalankan ibadah puasa dan memperbanyak amal kebajikan. Website ini bertujuan untuk menjadi panduan lengkap bagi umat Muslim dalam menyambut dan menjalani bulan suci Ramadhan. Kami mengajak Anda untuk memanfaatkan kesempatan ini untuk memperdalam ibadah, meningkatkan kualitas diri, dan berbagi kebahagiaan bersama sesama.
         </p>
-    </div>
+        <p class="intro">
+            Temukan berbagai acara menarik yang dapat Anda ikuti untuk memperkaya pengalaman spiritual selama Ramadhan. Dengan informasi yang terstruktur dan mudah diakses, website ini akan membantu Anda memaksimalkan ibadah dan meningkatkan pengetahuan tentang Ramadhan. Jangan lewatkan kesempatan untuk bersama-sama menumbuhkan semangat ibadah dan berbagi kebaikan selama bulan suci ini.
+        </p>
+        <br>
+        <h3>==============================================================================================================</h3> 
+        <br>
+        <h2>Pendaftaran Acara Ramadhan</h2>
+        <p class="intro">
+            Silakan isi formulir di bawah ini untuk mendaftar ke acara yang kami adakan selama bulan Ramadhan. Pastikan data yang Anda masukkan benar. Setiap acara dirancang untuk memberikan pengalaman spiritual yang mendalam. Terimakasih dan mari kita sambut Ramadhan dengan penuh keberkahan!
+        </p>
 
+<div class="loader">
+  <div class="circle">
+    <div class="dot"></div>
+    <div class="outline"></div>
+  </div>
+  <div class="circle">
+    <div class="dot"></div>
+    <div class="outline"></div>
+  </div>
+  <div class="circle">
+    <div class="dot"></div>
+    <div class="outline"></div>
+  </div>
+  <div class="circle">
+    <div class="dot"></div>
+    <div class="outline"></div>
+  </div>
+</div>
+
+        
+        <p><strong>Tanggal Acara:</strong></p>
+       
+            <li><strong>Buka Bersama:</strong> 5, 12, 19, dan 26 Ramadhan</li>
+            <li><strong>Kajian Islami:</strong> Setiap hari Jumat, pukul 19.00 WIB</li>
+            <li><strong>Lomba Hafalan:</strong> 15 Ramadhan</li>
+            <li><strong>Donasi Sosial:</strong> 10 dan 20 Ramadhan</li>
+ <br>
+    
+        <form id="eventRegistrationForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email aktif Anda" required>
+    
+            <label for="event">Pilih Acara:</label>
+            <select id="event" name="event" required>
+                <option value="">-- Pilih Acara --</option>
+                <option value="Buka Bersama">Buka Bersama</option>
+                <option value="Kajian Islami">Kajian Islami</option>
+                <option value="Lomba Hafalan">Lomba Hafalan</option>
+                <option value="Donasi Sosial">Donasi Sosial</option>
+            </select>
+    
+        <button class="pushable">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front"> Daftar </span>
+        </button>
+
+        </form>
+    
+        <div id="result"></div>
+    
+        <h2>Peserta Terdaftar</h2>
+        <table id="participantsTable">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Acara</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data peserta akan ditambahkan di sini -->
+            </tbody>
+        </table>
+    </div>
+    
     <footer>
         <p>&copy; 2025 Sambut Ramadhan dengan Keberkahan. All rights reserved.</p>
         <div class="social-icons">
@@ -183,5 +589,40 @@
             <a href="https://www.instagram.com/menyambutramadhan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
-</body>
-</html>
+    
+    <script>
+        document.getElementById('eventRegistrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const selectedEvent = document.getElementById('event').value;
+    
+            if (name && email && selectedEvent) {
+                // Create a new row in the table
+                const tableBody = document.querySelector('#participantsTable tbody');
+                const newRow = tableBody.insertRow();
+    
+                // Add cells to the new row
+                const nameCell = newRow.insertCell();
+                const emailCell = newRow.insertCell();
+                const eventCell = newRow.insertCell();
+    
+                // Populate the cells with data
+                nameCell.textContent = name;
+                emailCell.textContent = email;
+                eventCell.textContent = selectedEvent;
+    
+                // Clear the form
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('event').value = '';
+    
+                // Display a success message
+                document.getElementById('result').innerHTML = '<p style="color:green;">Pendaftaran berhasil!</p>';
+            } else {
+                document.getElementById('result').innerHTML = '<p style="color:red;">Harap isi semua kolom!</p>';
+            }
+        });
+    </script>
+    
